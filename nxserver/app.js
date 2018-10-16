@@ -11,24 +11,25 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
-var connection = mysql.createConnection({      //创建mysql实例
-  host:'127.0.0.1',
-  port:'3306',
-  user:'root',
-  password:'wenter670740',
-  database:'mydb'
-});
+// 直连代码
+// var connection = mysql.createConnection({      //创建mysql实例
+//   host:'127.0.0.1',
+//   port:'3306',
+//   user:'root',
+//   password:'wenter670740',
+//   database:'mydb'
+// });
 
-connection.connect();
-var sql = 'SELECT * FROM user';
-connection.query(sql, function (err,result) {
-    if(err){
-        console.log('[SELECT ERROR]:',err.message);
-    }
-    console.log(result);  //数据库查询结果返回到result中
+// connection.connect();
+// var sql = 'SELECT * FROM user';
+// connection.query(sql, function (err,result) {
+//     if(err){
+//         console.log('[SELECT ERROR]:',err.message);
+//     }
+//     console.log(result);  //数据库查询结果返回到result中
  
-});
-connection.end();
+// });
+// connection.end();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
