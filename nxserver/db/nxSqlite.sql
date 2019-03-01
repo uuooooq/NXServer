@@ -7,7 +7,7 @@ PRAGMA foreign_keys = off;
 BEGIN TRANSACTION;
 
 -- 表：user
-CREATE TABLE user (userid INTEGER PRIMARY KEY NOT NULL UNIQUE, name CHAR (255) UNIQUE NOT NULL, pw CHAR (255) NOT NULL, "desc" CHAR (255) DEFAULT 未填写);
+CREATE TABLE user (userid INTEGER PRIMARY KEY NOT NULL UNIQUE, name CHAR (255) UNIQUE NOT NULL, pw CHAR (255) NOT NULL, "desc" CHAR (255) DEFAULT "未填写");
 INSERT INTO user (userid, name, pw, "desc") VALUES (1, 'wenter', 'wener', NULL);
 INSERT INTO user (userid, name, pw, "desc") VALUES (2, 'sfsd', 'sdfsfsd', 'werwr');
 INSERT INTO user (userid, name, pw, "desc") VALUES (3, 'fdsf', 'sdfsfd', 'sdfsdf');
