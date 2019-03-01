@@ -17,3 +17,6 @@ CREATE TABLE record (recordid INTEGER PRIMARY KEY AUTOINCREMENT, content CHAR(81
 COMMIT TRANSACTION;
 PRAGMA foreign_keys = on;
 
+-- mysql 创建数据库
+CREATE SCHEMA `nx` DEFAULT CHARACTER SET utf8 ;
+
