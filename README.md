@@ -3,6 +3,7 @@
 
 ### api list:
  ```
+ http://localhost:3000/users
 http://localhost:3000/
 http://localhost:3000/record
 
